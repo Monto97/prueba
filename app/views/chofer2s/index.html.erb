@@ -1,0 +1,19 @@
+<h1>Listado de Choferes</h1>
+<table>
+	 <tr>
+		<%= @chofer.each do |chof| %>
+		<th>Nombre</th>
+		<th>Apellido</th>
+		<th>Dni</th>
+		<th>Edad</th>
+     </tr>
+
+     <tr> 
+     	<td> <%= chof.nombre %> </td>
+     	<td> <%= chof.apellido %> </td>
+     	<td> <%= chof.dni%> </td>
+     	<td> <%= chof.edad %> </td>
+     </tr>
+
+     <% end %>
+ </table>
